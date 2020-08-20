@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Luca Ferrari</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/projects.css">
+        <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    </head>
+<body>
+    <body> 
+        <section class="banner" id="sec">
+            <img src="img/1.svg" id="top">
+            <img src="img/2.svg" id="bottom">
+            <header>
+                <a href="/" class="logo"><i class="fa fa-circle-o" aria-hidden="true"></i></a>
+                <div id="toggle" onclick="toggle()"></div>
+            </header>
+            <div class="content">
+                <h2>Projects</h2>
+                <p>Some of the projects I've been working on in the last years.<br>For every project it is possible to get a brief overview of it and the technologies used to complete it.</p>
+                <div class="container" id="pop">
+                    <div class="box">
+                       <h2>01</h2>   
+                       <h3>backCor</h3>
+                       <img src="img/backCor_AlphaW.png">
+                       <a onclick="toggle_pop(1)" class="read">Read more</a>
+                    </div>
+                    <div class="box">
+                        <h2>02</h2>   
+                        <h3>COVID-19 Hackathon</h3>  
+                        <img src="img/cov.png">            
+                        <a onclick="toggle_pop(2)" class="read">Read more</a>
+                    </div>
+                    <div class="box">
+                        <h2>03</h2>   
+                        <h3>Complex Networks analysis</h3>   
+                        <img src="img/bluenet.png" class="smaller">           
+                        <a onclick="toggle_pop(3)" class="read">Read more</a>
+                    </div>
+                    <div class="box">
+                        <h2>04</h2> 
+                        <h3>Dice image recognition</h3>   
+                        <img src="img/dice.png">             
+                        <a onclick="toggle_pop(4)" class="read">Read more</a>
+                    </div>
+                    <div class="box">
+                        <h2>05</h2>   
+                        <h3 class="smaller">ferrariluca.net</h3>
+                        <img src="img/www.png">
+                        <a onclick="toggle_pop(5)" class="read">Read more</a>
+                    </div>                   
+                </div>  
+
+                <div id="popup1" class="popup">
+                    <div class="left">
+                        <img src="img/backCor_AlphaW.png">
+                    </div>       
+                    <div class="right">
+                        <a class="x" onclick="toggle_pop(1)">
+                            <i class="fa fa-times"></i>
+                        </a>
+                        <h3>backCor</h3>
+                        <ul>
+                            <li>Python</li>
+                            <li>OOP</li>
+                            <li>Tkinter</li>
+                            <li>Numpy</li>
+                            <li>Matplotlib</li>
+                            <li>Pyinstaller</li>
+                            <li>Inno Setup</li>
+                        </ul>
+                        <h4>About</h4>
+                        <p><span>backCor</span> is a <span>pre-processing</span> graphical tool designed for Raman spectra.<br>After being properly proecessed, Raman Spectra data is used to classify mammal microcalcification and therefore to <span>detect breast tumor</span>.<br>I designed and developed the software in collaboration with the <a href="https://www.icsmaugeri.it/per-i-ricercatori/laboratori-ricerca/laboratorio-di-nanomedicina-e-imaging-molecolare" class="link"><span>Nanomedicine and Molecular Imaging lab  </span></a>(IRCCS ICS Maugeri) and the<a href="http://mclab.unipv.it/index.php" class="link"><span> CCPS lab</span></a> (UNIPV).<br>The project let me put into practice both my Computer engineering and Biomedical engineering skills I gained during my course of study and gave me the possibility to work in a real-world environment where communicating, discussing and getting continuous feedback from the labs members was crucial to deliver it.</p>
+                        <a class="code" href="https://github.com/frittatelle/backCor"><i class="fa fa-code"></i> View code</a>
+                        <a class="code" href="docs/backCor Installer.exe" download><i class="fa fa-download"></i> Download</a>
+                    </div>
+                </div>
+                <div id="popup2" class="popup">
+                    <div class="left">
+                        <img src="img/cov.png">
+                    </div>       
+                    <div class="right">
+                        <a onclick="toggle_pop(2)" class="x">
+                            <i class="fa fa-times"></i>
+                        </a>
+                        <h3>COVID-19 Hackathon</h3>
+                        <ul>
+                            <li>Python</li>
+                            <li>Numpy</li>
+                            <li>Pandas</li>                           
+                            <li>SciKit-learn</li>
+                            <li>Matplotlib</li>
+                            <li>Seaborn</li>
+                        </ul>
+                        <h4>About</h4>
+                        <p>The objective of the project/hackathon was to investigate COVID-19 data providing meaningful insights and trends.<br>As explained in the <a href="http://antoninonocera.unipv.it/2020/04/01/dsbda-2020-hackathon-covid19/" class="link"> <span>rules</span></a>, the candidate needed to carry out a complete Data Science analysis that would have been evaluated based on originality, result correctness, presentation and complexity.<br>
+                        In my analysis I tried to assess the <span>effectiveness</span> of the Italian Governement <span>containement measures</span>.<br>
+                        The main idea I had was to visualize the number of new cases with respect to the total number of cases instead of doing that against time.<br>
+                        By doing this it was possible to demonstrate the effectiveness of the quarantine measures that otherwise would have been hidden by the exponential growth of the number of new cases.<br>
+                        The analysis was positively evaluated and got me the 2nd place in the COVID-19 Hackathon.
+                        </p>
+                        <a class="code" href="docs/hackathon.html"><i class="fa fa-eye"></i> View analysis</a>
+                        <a class="code" href="http://antoninonocera.unipv.it/2020/04/01/dsbda-2020-hackathon-covid19/"><i class="fa fa-file"></i> Hackathon</a>
+                    </div>
+                </div>   
+                <div id="popup3" class="popup">
+                    <div class="left">
+                        <img src="img/bluenet.png">
+                    </div>       
+                    <div class="right">
+                        <a onclick="toggle_pop(3)" class="x">
+                            <i class="fa fa-times"></i>
+                        </a>
+                        <h3>Complex Networks analysis</h3>
+                        <ul>
+                            <li>Nginx</li> 
+                            <li>AWS</li>
+                            <li>HTTP/2</li>
+                            <li>Proxy Servers</li>
+                            <li>Ubuntu Server</li>
+                            <li>CentOS</li>
+                            <li>Apache</li>
+                            <li>DDoS</li>
+                        </ul>
+                        <h4>About</h4>
+                        <p>In this project, me and my group implemented and tested different server architectures and technologies to <span> assess the performance and the robustness</span> of the systems.<br>
+                        After setting up multiple machines on AWS running different protocols (HTTP/1.1, HTTP/2) and arranging them in simpler and more complex network architectures (Reverse proxies...), we defined a pipeline of tests to evaluate the performance in terms of Page Load Time, Round Trip Time and the overall stability.<br>
+                        To test that, we generated a big amount of HTTP traffic to the target configurations simulating a DDoS attack.<br>
+                        After doing that, we selected the best one for every single scenario.<br>
+                        For the project I focused on the HTTP/2 implementation, performance testing and in particular on exploiting the powerful <span>Server Push</span> feature that comes with it.</p>
+                        <a class="code" href="docs/edi.pdf"><i class="fa fa-eye"></i> View analysis</a>
+                    </div>
+                </div>   
+                <div id="popup4" class="popup">
+                    <div class="left">
+                        <img src="img/dice.png">
+                    </div>       
+                    <div class="right">
+                        <a onclick="toggle_pop(4)" class="x">
+                            <i class="fa fa-times"></i>
+                        </a>
+                        <h3 class="smaller">Dice image recognition</h3>
+                        <ul>
+                            <li>Python</li>
+                            <li>Numpy</li>                          
+                            <li>Matplotlib</li>
+                            <li>SciKit-learn</li>
+                            <li>Seaborn</li>
+                        </ul>
+                        <h4>About</h4>
+                        <p>The goal of the project was to design a system that, given a image of a single six-sided die, was automatically able to determine the outcome of the roll (a number in the 1–6 range).
+                        <br>To do that, I designed a feature extraction procedure that extracts information from the images, I trained different classification models (<span>Multinomial Logistic Regression, KSVM, MLP</span>) and after analysing the behavior of the trained models I selected the best one for the purpose.<br> Different ML libraries could have been used to complete the task (Keras, Pytorch, SciKit-learn) but I decided to use the one I created and coded during my ML course.<br>
+                        In the analysis I also used the SciKit-learn library since at that time no KSVM models were implemented in my personal one yet.    
+                        </p>
+                        <a class="code" href="docs/dice.pdf"><i class="fa fa-eye"></i> View analysis</a>
+                        <a class="code" href="https://github.com/frittatelle/diceImageRecognition"><i class="fa fa-code"></i> View code</a>
+                    </div>
+                </div> 
+                <div id="popup5" class="popup">
+                    <div class="left">
+                        <img src="img/www.png">
+                    </div>       
+                    <div class="right">
+                        <a onclick="toggle_pop(5)" class="x">
+                            <i class="fa fa-times"></i>
+                        </a>
+                        <h3>ferrariluca.net</h3>
+                        <ul>
+                            <li>AWS</li>
+                            <li>Ubuntu Server</li>
+                            <li>Nginx</li>
+                            <li>HTML</li>
+                            <li>CSS</li>                          
+                            <li>Javascript</li>
+                            <li>PHP</li>
+                            <li>MySQL</li>
+                        </ul>
+                        <h4>About</h4>
+                        <p>This project is about the website you're visiting right now!<br>This website is a place to showcase my recent projects and my latest interests in the Computer Engineering/ Data Science/ Biomedical Engineering worlds.
+                        <br>
+                        For the frontend I used a combination of HTML, CSS and Javascript.<br>For the backend I used PHP and MySQL for the DB.
+                        To be completely free to experiment and possibly expanding my website to a platform to deploy my services in the future, I decided to host it as a ec2 instance on AWS.
+                        </p>
+                        <a class="code" href="index.html"><i class="fa fa-home"></i> Go to the homepage</a>
+                    </div>
+                </div>   
+
+            </div>
+        </section> 
+
+        <script type="text/javascript"> 
+            function toggle_pop(x){
+                var id = 'popup' + x;
+                var pop = document.getElementById(id);
+                pop.classList.toggle('active_pop');
+                var blur = document.getElementById('pop');
+                blur.classList.toggle('active_blur');
+            }
+        </script>
+
+        
+
+
+
+        <div id="navigation">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="about.html">About me</a></li>
+                <li><div id="toggle" onclick="toggle()"><a><i class="fa fa-times"></i></a></div></li>
+            </ul>
+        </div>
+
+        <script type="text/javascript">
+            function toggle(){
+                var sec = document.getElementById('sec');
+                var nav = document.getElementById('navigation');
+                var vid = document.getElementById('video');
+                var con = document.getElementById('contact-me');
+                sec.classList.toggle('active')
+                nav.classList.toggle('active')
+                vid.classList.toggle('active')
+                con.classList.toggle('active')
+            }
+        </script>
+
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luca Ferrari</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
+
+<body> 
+    <section class="banner" id="sec">
+        <img src="img/1.svg" id="top">
+        <img src="img/2.svg" id="bottom">
+        <header>
+            <a href="/" class="logo"><i class="fa fa-circle-o" aria-hidden="true"></i></a>
+            <a href="projects.html" id="prj">See my work! <i class="fa fa-eye" aria-hidden="true"></i></a>
+            <div id="toggle" onclick="toggle()"></div>
+        </header>
+        <div class="content">
+            <h2>Hello World,<br>I'm <span>Luca Ferrari</span></h2>
+            <p>I'm a Machine Learning and Data Science enthusiast with a strong Biomedical Engineering background.<br>
+                I love music, sports, photography and understanding the world we live in with data.
+            </p>
+            <a href="#video" class="scroll-down left">
+                <div class="mouse">
+                    <span></span>
+                </div>
+                <div class="arrow">
+                    <span></span>
+                </div>      
+            </a>
+        </div>
+        <ul class="sci">
+            <li><a href="mailto:ferrariluca.cs@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+            <li><a href="docs/LucaFerrariCV.pdf"><i class="fa fa-file-text" aria-hidden="true"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/luca-ferrari-75333b1b3/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li> 
+            <li><a href="https://github.com/frittatelle"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+        </ul>
+    </section> 
+
+    
+
+    <div class="banner content" id="video">
+        <img src="img/3.svg" id="top">
+        <img src="img/4.svg" id="bottom">
+        <div id="video-wrapper">   
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/MZ5kSLULU0E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <a href="#contact-me" class="scroll-down" id="scroll-down-contact">
+            <div class="mouse">
+                <span></span>
+            </div>
+            <div class="arrow">
+                <span></span>
+            </div>      
+        </a>
+     </div>
+
+     
+    <div class="banner" id="contact-me">
+        <img src="img/5.svg" id="top">
+        <div class="content" id="contact-form">    
+            <div class="contact-form">
+                <h2>Contact me!</h2>
+                <p>
+                    <a href="mailto:ferrariluca.cs@gmail.com">
+                        <i class="fa fa-envelope" aria-hidden="true"></i><span>ferrari.luca.cs@gmail.com</span><br>
+                    </a> 
+                    <a href="https://www.linkedin.com/in/luca-ferrari-75333b1b3/">
+                        <i class="fa fa-linkedin" aria-hidden="true"></i>
+                        <span>Luca Ferrari</span><br>
+                    </a> 
+                    <a href="https://github.com/frittatelle">
+                        <i class="fa fa-github" aria-hidden="true"></i>
+                        <span>@frittatelle</span><br>
+                    </a>
+                </p>
+            </div>                               
+        </div>
+    </div>
+
+    <div id="navigation">
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="about.html">About me</a></li>
+            <li><div id="toggle" onclick="toggle()"><a><i class="fa fa-times"></i></a></div></li>
+        </ul>
+    </div>
+
+    
+    <script type="text/javascript">
+        function toggle(){
+            var sec = document.getElementById('sec');
+            var nav = document.getElementById('navigation');
+            var vid = document.getElementById('video');
+            var con = document.getElementById('contact-me');
+            sec.classList.toggle('active')
+            nav.classList.toggle('active')
+            vid.classList.toggle('active')
+            con.classList.toggle('active')
+        }
+    </script>
+</body>
+
+</html>

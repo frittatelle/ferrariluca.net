@@ -1,0 +1,402 @@
+/*projects*/
+
+.content {
+    z-index: 2;
+}
+
+.content h2{
+    font-size: 5em;
+    margin-top: 20px;
+}
+
+.content p{
+    font-size: 1.4em;
+    margin-top: 30px;
+}
+
+.container{
+    margin-top: 20px;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.container .box{
+    position: relative;
+    margin-top: 20px; 
+    margin-right: 20px;
+    background: #071522;
+    width: 400px;
+    flex: 0 0 100px 200px;
+    height:60vh;
+}
+
+.container .box h2{
+    color: whitesmoke;
+    font-size: 5em;
+    position: absolute;
+    opacity: 0.5;
+    top: 10%;
+    left: 10%;
+    transition: 0.4s;
+    margin-top: 0px;
+}
+
+.container .box h3{
+    color: whitesmoke;
+    font-weight: 700;
+    margin-top: 40px;
+    font-size: 3.2em;
+    line-height: 95%;
+    position: relative;
+    opacity: 0.5;
+    top: 25%;
+    left: 10%;
+    transition: 0.4s;
+}
+.container .box h3.smaller{
+    font-size: 2.8em;
+}
+
+.container .box:hover h2{
+    opacity: 1;
+    top: 5%;
+}
+
+.container .box:hover h3{
+    opacity: 1;
+    top: 20%;
+    color: coral;
+}
+
+.container .box a{
+    color: whitesmoke;
+    border-radius: 25px;
+    font-size: 1.2em;
+    font-weight: 500;   
+    transition: 0.4s;
+    position: absolute;
+    top: 8%;
+    right: 10%;
+    background-color: darkslateblue;
+    padding: 10px 20px 10px;
+    opacity: 0;
+}
+.container .box:hover a{
+    visibility: visible;
+    opacity: 1;
+}
+
+.container .box a:hover{
+    background-color: coral;
+    cursor: pointer;
+}
+
+.container .box img{
+    width: 18vh;
+    opacity: 0.5;
+    transition: 0.4s;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: 5%;
+}
+
+.container .box:hover img{
+    bottom: 10%;
+    opacity: 1;
+}
+
+#pop.active_blur{
+    filter:blur(10px);
+    pointer-events:none;
+    user-select: none;
+}
+
+#popup1,
+#popup2,
+#popup3,
+#popup4,
+#popup5
+{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    height: 90%;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
+    background-color: #071522;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.4s;
+    z-index: 5;
+}
+
+
+.left {
+    width: 35%; 
+    float:left;
+    height: 100%;
+}
+
+.left img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    margin-top: 70%;
+}
+
+.right {
+    width:65%; 
+    float:right;
+    background-color: #040d15;
+    height: 100%;
+}
+
+.right h3{
+    font-size: 3.5em;
+    position: relative;
+    left: 5%;
+    top: 5%;
+    margin-bottom:7.5%;
+    line-height: 95%;
+    width: 60%;
+}
+
+.right h3.smaller{
+    font-size: 2.8em;
+}
+
+.right .x{
+    cursor: pointer;
+    transition: 0.4s;
+    font-size: 2em;
+    color: whitesmoke;
+    top: 5%;
+    right: 5%;
+    position: absolute;
+}
+.right .x:hover{
+    color: coral;
+}
+
+.right ul{
+    position: relative;
+    left: 10px;
+    max-width: 70%;
+}
+
+.right ul li{
+    display: inline-block;
+    color: whitesmoke;
+    font-size: 1.1em;
+    position: relative;
+    left: 5%;
+    padding: 8px 20px 8px;
+    background-color:darkslateblue;
+    border-radius: 25px;
+    margin-top: 2.5%;
+}
+
+.right h4{
+    position: relative;
+    color: whitesmoke;
+    font-size: 2em;
+    left: 5%;
+    margin-top: 2.5%;
+}
+
+.right p{
+    margin-top: 2.5%;
+    position: relative;
+    left: 5%;
+    font-size: 1.2em;
+    margin-bottom: 5%;
+    height: 30%;
+    width: 95%;
+    padding-right: 40px;
+    overflow-y: scroll;
+}
+
+.right p span{
+    font-weight: 700;
+}
+
+.right .link{
+    text-decoration: none;
+    transition: 0.4s;
+    color: whitesmoke;
+}
+.right .link:hover{
+    text-decoration: none;
+    color: coral;
+}
+
+
+.right .code{
+    position: relative;
+    left: 5%;
+    font-size: 1.1em;
+    padding: 8px 20px 8px;
+    background-color:darkslateblue;
+    border-radius: 25px;
+    transition: 0.4s;
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.right .code:hover{
+    background-color:coral;
+    color: whitesmoke;
+}
+
+ 
+
+#popup1.active_pop,
+#popup2.active_pop,
+#popup3.active_pop,
+#popup4.active_pop,
+#popup5.active_pop
+{
+    visibility: visible;
+    opacity: 1;
+}
+
+
+@media (max-width: 768px){
+
+    .content h2{
+        font-size: 2.8em;
+    }
+
+    .content p{
+        font-size: 1.4em;
+        margin-top: 10px;
+    }
+
+    .container .box{
+        width: 100%;
+        margin-right: 0px;;
+    }
+
+    .container .box h3{
+        max-width: 90%;
+        font-size:2.8em;
+    }
+
+    .container .box h3.smaller{
+        font-size: 2.2em;
+    }
+
+    .container .box a{
+        font-size: 1.2em;
+    }
+
+    .container .box a.read{
+        padding-right: 20px;
+    }
+
+    #popup1,
+    #popup2,
+    #popup3,
+    #popup4,
+    #popup5
+    {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90%;
+        height: 90%;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
+        background-color: #071522;
+        visibility: hidden;
+        opacity: 0;
+        transition: 0.4s;
+        z-index: 5;
+    }
+
+    .left{
+        float: left;
+        width: 100%;
+        height: 10%;
+    }
+
+    .left img{
+        margin-top: 15%;
+        opacity: 0;
+    }
+
+    .right{
+        float:left;
+        height: 90%;
+        width: 100%;
+    }
+
+
+    .right h3{
+        font-size: 2.4em;
+        margin-bottom: 40px;
+        width: 100%;
+    }
+    .right ul{
+        white-space: nowrap;
+        overflow-x: scroll;
+        left: 5%;
+        max-width: 90%;
+    }
+    .right ul li{
+        font-size: 1em;
+        display: inline-block;
+    }
+
+    .right h4{
+        font-size: 1.8em;
+    }
+
+    .banner .content .right p,
+    .banner .content a{
+        font-size: 1.1em;
+        padding-right: 0px;
+    }
+
+    .right a.x{
+        top: 2.5%;
+        font-size: 1.8em;
+    }
+
+    .right p{
+        height: 42vh;
+    }
+
+    .right a.code{
+        font-size: 1em;
+        padding-right: 20px;
+    }
+    
+    
+
+}
+
+@media (max-width: 375px){
+    .container .box h2{
+        font-size: 3.5em;
+    }
+    .container .box a{
+        font-size: 1em;
+        top: 6%;
+    }
+    .container .box h3{
+        max-width: 90%;
+        font-size:2.4em;
+    }
+
+    .container .box h3.smaller{
+        font-size: 2em;
+    }
+}
